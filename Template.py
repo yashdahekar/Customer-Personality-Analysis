@@ -3,24 +3,30 @@ from pathlib import Path
 
 package_name="Customer-Personality-Analysis"
 
-list_of_files=[
-    "github/workflows/.gitkeep",
-    f"src/{package_name}/__init__.py",
-    f"src/{package_name}/components/__init__.py",
-    f"src/{package_name}/components/data_ingestion.py",
-    f"src/{package_name}/components/data_transformation.py",
-    f"src/{package_name}/components/model_trainer.py",
-    f"src/{package_name}/pipelines/__init__.py",
-    f"src/{package_name}/pipelines/training_pipeline.py",
-    f"src/{package_name}/pipelines/prediction_pipeline.py",
-    f"src/{package_name}/logger.py",
-    f"src/{package_name}/exception.py",
-    f"src/{package_name}/utils/__init__.py",
-    "notebooks/research.ipynb",
-    "notebooks/data/.gitkeep",
+list_of_files = [
+    f"{package_name}/__init__.py",
+    f"{package_name}/components/__init__.py",
+    f"{package_name}/components/data_ingestion.py",
+    f"{package_name}/components/data_transformation.py",
+    f"{package_name}/components/data_validation.py",
+    f"{package_name}/components/model_evaluation.py",
+    f"{package_name}/components/model_pusher.py",
+    f"{package_name}/components/model_trainer.py",
+    f"{package_name}/entity/__init__.py",
+    f"{package_name}/entity/artifacts_entity.py",
+    f"{package_name}/entity/config_entity.py",
+    f"{package_name}/constants/training/__init__.py",
+    f"{package_name}/exception.py",
+    f"{package_name}/logger.py",
+    f"{package_name}/pipeline/__init__.py",
+    f"{package_name}/pipeline/training_pipeline.py",
+    f"{package_name}/pipeline/batch_prediction.py"
+    f"{package_name}/utils.py",
+    "template/index.html",
+    "template/result.html",
+    "application.py",
     "requirements.txt",
-    "setup.py",
-    "init_setup.sh",
+    ".gitignore"
 ]
 
 
